@@ -28,6 +28,7 @@ require_once 'vendor/autoload.php';
 </head>
 
 <body>
+    <!-- Working with Person(a) class -->
     <?php
     // $pet01 = new Pet();
     // echo $pet01->owner();
@@ -72,6 +73,7 @@ require_once 'vendor/autoload.php';
     ?>
 
 
+    <!-- Working with forms -->
     <form action="appClasses/includes/calc.php" method="post">
         <fieldset>
             <legend>My own Calculator!</legend>
@@ -89,6 +91,7 @@ require_once 'vendor/autoload.php';
 
 
     <?php
+    // Abstract class
     // echo '<hr>';
     // $buyProduct = new BuyProduct();
     // echo $buyProduct->getPayment();
@@ -104,6 +107,8 @@ require_once 'vendor/autoload.php';
     // $newObj->helloWorld();
     ?>
 
+
+    <!-- Working with DB -->
     <?php
     echo '<br>';
     //$testObjt = new Test();
@@ -113,10 +118,10 @@ require_once 'vendor/autoload.php';
 
     $usersObjt = new appClasses\classes\UsersView();
     $usersObjt->showAllUsers();
-    $usersObjt->showSpecificUsers('Daniel', 'Nielsen');
+    // $usersObjt->showSpecificUsers('Daniel', 'Nielsen');
 
-    $usersObjt2 = new appClasses\classes\UsersContr();
-    $usersObjt2->createUser('Tix', 'WebTix', '2020-01-01');
+    // $usersObjt2 = new appClasses\classes\UsersContr();
+    // $usersObjt2->createUser('Tix', 'WebTix', '2020-01-01');
 
     ?>
 </body>

@@ -7,7 +7,7 @@ class Users extends Dbh {
         $sql = 'SELECT * FROM users';
         $stmt = $this->connect()->query($sql);
         while($row = $stmt->fetch()) {
-            echo $row['users_firstname'] . '<br>';
+            echo $row['users_firstname'] . ' ' . $row['users_lastname'] . '<br>';
         }
     }
 
@@ -15,7 +15,6 @@ class Users extends Dbh {
         $sql = 'SELECT * FROM users WHERE users_firstname = ? AND users_lastname = ?';
         $stmt = $this->connect()->prepare($sql);
         $stmt->execute([$firstname, $lastname]);
-
         $results = $stmt->fetchAll();
         return $results;
     }
