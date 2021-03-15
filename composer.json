@@ -1,0 +1,17 @@
+{
+    "name": "autoload/namespacer",
+    "authors": [
+        {
+            "name": "Tim Koprivnik",
+            "email": "t.koprivnik@gmail.com"
+        }
+    ],
+    "require": {
+        "nesbot/carbon": "^2.41.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "appClasses\\": "appClasses/"
+        }
+    }
+}
